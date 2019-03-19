@@ -11,12 +11,5 @@ phases:
       - npm run build -prod
   post_build:
     commands:
-<<<<<<< HEAD
-<<<<<<< HEAD
-      - aws --region us-east-1 s3 sync ./dist/ s3://cicdbucketpipeline/ --acl=public-read --delete
-=======
-      - aws --region us-east-1 s3 sync ./dist/ s3://codepipeline-us-east-1-260804324174/ --acl=public-read --delete
->>>>>>> cb67df666ea1c910670d85ea5e1f6cbe5d6399c1
-=======
       - aws --region us-east-1 s3 sync ./dist/ s3://codepipeline-us-east-1-698669650900/ --acl=public-read --delete
->>>>>>> 4e58b0fa6dea5c8bdd8e022ebb183ed3f44912a3
+
