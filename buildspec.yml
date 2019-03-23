@@ -11,5 +11,5 @@ phases:
       - npm run build -prod
   post_build:
     commands:
-      - aws --region us-east-1 s3 sync ./dist/ s3://codepipeline-us-east-1-698669650900/ --acl=public-read --delete
+      - aws --region us-east-1 s3 sync ./dist/ s3://codepipeline-us-east-1-935450079696/ --acl=public-read --delete
 
